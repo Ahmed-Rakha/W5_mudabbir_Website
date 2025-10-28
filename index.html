@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/variables.css" />
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaQuery.css" />
     <title>مدبّر | إدارة أموالك بذكاء</title>
   </head>
   <body>
@@ -25,12 +26,12 @@
           <div class="side-bar-main-icon-container bg-blue-600">
             <i class="fa-solid fa-coins fs-2xl" style="color: #ffffff"></i>
           </div>
-          <div class="">
+          <div class="display-md-screen-none">
             <h2 class="fs-4xl fw-black">مدبّر</h2>
             <p class="fs-sm fw-bold text-neutral-600">إدارة أموالك بذكاء</p>
           </div>
         </div>
-        <h3 class="my-5">
+        <h3 class="my-5 display-md-screen-none">
           <a
             href="#"
             class="main-home fw-bold text-blue-600 text-decoration-none"
@@ -43,36 +44,36 @@
           <li>
             <a href="#">
               <i class="fa-solid fa-arrow-right-arrow-left"></i>
-              المعاملات
+              <span class="display-md-screen-none">المعاملات</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fa-solid fa-chart-pie"></i>
-              الميزانيات
+              <span class="display-md-screen-none">الميزانيات</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fa-solid fa-piggy-bank"></i>
-              المدخرات
+              <span class="display-md-screen-none">المدخرات</span>
             </a>
           </li>
           <li>
             <a href="#">
               <i class="fa-solid fa-file-invoice-dollar"></i>
-              الفواتير الشهرية
+              <span class="display-md-screen-none"> الفواتير الشهرية </span>
             </a>
           </li>
         </ul>
-        <p>إجراءات سريعة</p>
+        <p class="display-md-screen-none">إجراءات سريعة</p>
         <ul>
           <li>
             <a href="#" class="fs-sm">
               <div class="bg-blue-100 text-blue-500">
                 <i class="fa-solid fa-paper-plane"></i>
               </div>
-              <span> إرسال أموال</span>
+              <span class="display-md-screen-none"> إرسال أموال</span>
             </a>
           </li>
           <li>
@@ -80,7 +81,7 @@
               <div class="bg-green-100 text-green-500">
                 <i class="fa-solid fa-plus"></i>
               </div>
-              <span> إضافة أموال</span>
+              <span class="display-md-screen-none"> إضافة أموال</span>
             </a>
           </li>
           <li>
@@ -88,7 +89,7 @@
               <div class="bg-purple-500 text-purple-100">
                 <i class="fa-solid fa-receipt"></i>
               </div>
-              <span>دفع فاتورة</span>
+              <span class="display-md-screen-none">دفع فاتورة</span>
             </a>
           </li>
           <li>
@@ -96,7 +97,7 @@
               <div class="bg-orange-100 text-orange-800">
                 <i class="fa-solid fa-chart-line"></i>
               </div>
-              <span> استثمار</span>
+              <span class="display-md-screen-none"> استثمار</span>
             </a>
           </li>
         </ul>
@@ -112,25 +113,27 @@
                 <h2>مدبّر</h2>
                 <p>إدارة أموالك بذكاء</p>
               </div>
-              <div class="header-right-3">
-                <p class="connected-icon"></p>
-                <p>متصل</p>
-              </div>
+            </div>
+            <div class="header-right-3">
+              <p class="connected-icon"></p>
+              <p>متصل</p>
             </div>
             <div class="header-left">
-              <div class="header-left-1">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-              <div class="header-left-2">
-                <i class="fa-solid fa-bell"></i>
-                <span>2</span>
+              <div class="header-left-icons-container">
+                <div class="header-left-1">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="header-left-2">
+                  <i class="fa-solid fa-bell"></i>
+                  <span>2</span>
+                </div>
               </div>
               <div class="header-left-3">
                 <div>
                   <h2>سيف أسامة</h2>
                   <p>حساب مميز</p>
                 </div>
-                <div>
+                <div class="header-left-3-img-container">
                   <img src="./assets/images/avatar-2.jpg" alt="avatar" />
                 </div>
               </div>

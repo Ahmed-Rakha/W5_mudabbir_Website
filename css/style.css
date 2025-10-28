@@ -160,9 +160,8 @@ p:has(a):hover i {
 .header .header-right {
   width: 300px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  /* border: 1px solid black; */
+  column-gap: 20px;
 }
 .header .header-right .header-right-1 {
   padding: 18px;
@@ -176,12 +175,20 @@ p:has(a):hover i {
 .header .header-right .header-right-1 i {
   font-size: 28px;
 }
-.header .header-right .header-right-3 {
+.header .header-right-3 {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  align-self: center;
+  margin-left: 40rem;
+  padding: 8px 18px;
+  border-radius: 15px;
+  background-color: var(--color-green-100);
+  color: var(--color-green-500);
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-semibold);
 }
-.header .header-right .header-right-3 .connected-icon {
+.header .header-right-3 .connected-icon {
   width: 10px;
   height: 10px;
   border-radius: 50px;
@@ -189,10 +196,16 @@ p:has(a):hover i {
 }
 
 .header .header-left {
-  width: 300px;
+  width: 400px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 20px;
+}
+
+.header .header-left .header-left-icons-container {
+  display: flex;
+  column-gap: 10px;
 }
 .header .header-left .header-left-1,
 .header .header-left .header-left-2 {
@@ -227,9 +240,13 @@ p:has(a):hover i {
   border-radius: 10px;
   background-color: var(--color-white);
 }
-.header .header-left .header-left-3 img {
+.header-left-3-img-container {
   width: 40px;
   height: 40px;
+}
+.header .header-left .header-left-3 img {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
 }
 .header .header-left .header-left-3 h2 {
@@ -303,7 +320,8 @@ p:has(a):hover i {
     "td-45 td-45 td-44 td-43 td-42 td-41";
   grid-area: transactions;
   /* border: 1px solid var(--color-neutral-400); */
-  padding: 0 35px 0px 15px;
+  /* padding: 0 35px 0px 15px; */
+  padding: 30px 25px;
 }
 
 .transactions-header-title {
@@ -346,8 +364,6 @@ p:has(a):hover i {
 
 .transactions .user-img img {
   display: block;
-  width: 50px;
-  height: 50px;
   border-radius: 50%;
 }
 
