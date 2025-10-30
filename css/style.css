@@ -158,7 +158,7 @@ p:has(a):hover i {
 }
 
 .header .header-right {
-  width: 300px;
+  width: 330px;
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -180,7 +180,7 @@ p:has(a):hover i {
   align-items: center;
   column-gap: 10px;
   align-self: center;
-  margin-left: 40rem;
+  margin-left: 38rem;
   padding: 8px 18px;
   border-radius: 15px;
   background-color: var(--color-green-100);
@@ -196,7 +196,7 @@ p:has(a):hover i {
 }
 
 .header .header-left {
-  width: 400px;
+  width: 410px;
   display: flex;
   justify-content: space-between;
   align-items: center;
