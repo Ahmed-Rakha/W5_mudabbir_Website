@@ -113,99 +113,142 @@
   .transactions .user-details div:nth-child(2) > p:nth-child(1) {
     font-size: var(--text-sm);
   }
-
-  /* .header,
-  .actual-balance,
-  .income,
-  .expenses,
-  .last-activities,
-  .transactions,
-  .monthly-bills,
-  .budget,
-  .income-expenses,
-  .account-summary,
-  .payment-methods {
-    width: inherit;
-  } */
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   .display-md-screen-none {
     display: none;
   }
-  .header .header-right-3 {
-    margin-left: 50px;
-  }
-  .header .header-left {
-    column-gap: 10px;
-    width: 320px;
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    grid-template-columns: 1fr;
+    grid-template-areas: "hero-container";
   }
 
-  .side-bar-main-icon-container,
+  .sub-container {
+    width: calc(100% - 240px);
+    margin: 0 auto;
+    padding: 0 0px;
+    box-sizing: border-box;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "header"
+      "header"
+      "header"
+      "actual-balance"
+      "actual-balance"
+      "actual-balance"
+      "actual-balance"
+      "actual-balance"
+      "income"
+      "income"
+      "income"
+      "income"
+      "income"
+      "expenses"
+      "expenses"
+      "expenses"
+      "expenses"
+      "expenses"
+      "last-activities"
+      "last-activities"
+      "last-activities"
+      "last-activities"
+      "last-activities"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "transactions"
+      "monthly-bills"
+      "monthly-bills"
+      "monthly-bills"
+      "monthly-bills"
+      "monthly-bills"
+      "monthly-bills"
+      "monthly-bills"
+      "budget"
+      "income-expenses"
+      "account-summary"
+      "payment-methods";
+  }
+  .header {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .header .header-right {
+    justify-content: flex-start;
+    column-gap: 20px;
+  }
   .header .header-right .header-right-1 {
-    padding: 12px;
+    padding: 15px;
   }
   .header .header-right .header-right-1 i {
-    font-size: 23px;
+    font-size: 22px;
+  }
+  .header .header-right-3 {
+    order: 3;
+    justify-content: center;
+    border-radius: 10px;
+    padding-block: 5px;
+    margin-left: 0px;
+    align-self: auto;
+  }
+  .header .header-left {
+    width: 100%;
+  }
+  .header .header-left .header-left-3 h2,
+  .header .header-left .header-left-3 p {
+    display: none;
+  }
+  .header .header-left .header-left-3 {
+    column-gap: 0;
+    justify-content: center;
+  }
+  .header-left-3-img-container {
+    width: 30px;
+    height: 30px;
+  }
+
+  .side-bar {
+    position: fixed;
+    z-index: 99999;
+  }
+
+  .transactions {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .transactions::-webkit-scrollbar {
+    display: none;
+  }
+
+  .transactions .user-img {
+    width: 45px;
+    height: 45px;
   }
 
   .actual-balance p:first-of-type,
   .income p:first-of-type,
   .expenses p:first-of-type {
     font-size: 20px;
-  }
-  .header {
-    order: 1;
-    width: inherit;
-  }
-
-  .actual-balance {
-    order: 2;
-    width: inherit;
-  }
-
-  .income {
-    order: 3;
-    width: inherit;
-  }
-
-  .expenses {
-    order: 4;
-    width: inherit;
-  }
-
-  .last-activities {
-    order: 5;
-    width: inherit;
-  }
-
-  .transactions {
-    order: 6;
-    width: inherit;
-  }
-
-  .monthly-bills {
-    order: 7;
-    width: inherit;
-  }
-
-  .budget {
-    order: 8;
-    width: inherit;
-  }
-
-  .income-expenses {
-    order: 6;
-    width: inherit;
-  }
-
-  .account-summary {
-    order: 10;
-    width: inherit;
-  }
-
-  .payment-methods {
-    order: 11;
-    width: inherit;
   }
 }

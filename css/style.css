@@ -1141,3 +1141,5 @@ p:has(a):hover i {
 .payment-methods-details-cards-container-card-1:hover {
   transform: rotateY(180deg);
 }
+
+/* media */
